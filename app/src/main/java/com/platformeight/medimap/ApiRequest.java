@@ -1,4 +1,4 @@
-package com.platformeight.chickenmap;
+package com.platformeight.medimap;
 import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;

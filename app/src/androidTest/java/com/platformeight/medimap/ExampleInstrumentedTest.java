@@ -1,4 +1,4 @@
-package com.platformeight.chickenmap;
+package com.platformeight.medimap;
 
 import android.content.Context;
 

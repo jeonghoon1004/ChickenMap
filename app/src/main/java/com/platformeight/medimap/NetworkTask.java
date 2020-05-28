@@ -3,7 +3,7 @@
  * Copyright (c) 2019. platform eight. All rights reserved.
  */
 
-package com.platformeight.chickenmap;
+package com.platformeight.medimap;
 
 import android.os.AsyncTask;
 
