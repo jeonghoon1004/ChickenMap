@@ -1,4 +1,4 @@
-package com.platformeight.motelmap;
+package com.platformeight.parkingmap;
 
 import android.content.Context;
 

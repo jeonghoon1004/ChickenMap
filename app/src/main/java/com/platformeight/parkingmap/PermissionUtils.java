@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-package com.platformeight.motelmap;
+package com.platformeight.parkingmap;
 
 import android.Manifest;
 import android.app.AlertDialog;
