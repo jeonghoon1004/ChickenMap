@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-package com.platformeight.chickenmap;
+package com.platformeight.meatmap;
 
 import android.Manifest;
 import android.app.AlertDialog;

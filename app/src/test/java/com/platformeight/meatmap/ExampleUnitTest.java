@@ -1,4 +1,4 @@
-package com.platformeight.chickenmap;
+package com.platformeight.meatmap;
 
 import org.junit.Test;
 
