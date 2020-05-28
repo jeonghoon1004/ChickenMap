@@ -1,4 +1,4 @@
-package com.platformeight.meatmap;
+package com.platformeight.motelmap;
 
 import android.content.Context;
 
