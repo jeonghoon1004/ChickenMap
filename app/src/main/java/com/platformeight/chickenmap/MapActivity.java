@@ -166,12 +166,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap = map;
         mMap.setOnMyLocationButtonClickListener(this);
         // Set a listener for info window events.
-        enablePhoneCall();
-        mMap.setOnInfoWindowClickListener(this);
+
+
         //setLocation(); //서울시청
         enableMyLocation();
-        getDeviceLocation();
-
+        //getDeviceLocation();
+        //enablePhoneCall();
+        //mMap.setOnInfoWindowClickListener(this);
     }
     public void setLocation(){
         LocationSource locationSource = new LocationSource() {
@@ -296,6 +297,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         Log.d("mylocation", "Current location:\n" + mMap.getMyLocation());
+        getDeviceLocation();
         return false;
     }
     /**
@@ -308,6 +310,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             if (mMap != null) {
                 mMap.setMyLocationEnabled(true);
                 mLocationPermissionGranted = true;
+                getDeviceLocation();
+                enablePhoneCall();
+                mMap.setOnInfoWindowClickListener(this);
             }
         } else {
             // Permission to access the location is missing. Show rationale and request permission
@@ -328,6 +333,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         }
         // [END maps_check_location_permission]
     }
+    boolean flag =false;
     // [START maps_check_location_permission_result]
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -335,7 +341,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             if (PermissionUtils.isPermissionGranted(permissions, grantResults, Manifest.permission.ACCESS_FINE_LOCATION)) {
                 // Enable the my location layer if the permission has been granted.
                 enableMyLocation();
-
+                flag=true;
             } else {
                 // Permission was denied. Display an error message
                 // [START_EXCLUDE]
@@ -347,7 +353,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             if (PermissionUtils.isPermissionGranted(permissions, grantResults, Manifest.permission.CALL_PHONE)) {
                 // Enable the my location layer if the permission has been granted.
                 enablePhoneCall();
-
+                flag=true;
             } else {
                 // Permission was denied. Display an error message
                 // [START_EXCLUDE]
@@ -370,8 +376,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             // Permission was not granted, display error dialog.
             Toast.makeText(this, "전화걸기 권한이 없습니다.", Toast.LENGTH_SHORT).show();
             pPermissionDenied = false;
+        }else if (flag==true){
+            flag=false;
+        } else {
+            adShow();
         }
-        adShow();
     }
 
     /**
