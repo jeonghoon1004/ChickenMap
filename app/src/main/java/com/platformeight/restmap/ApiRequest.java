@@ -1,4 +1,4 @@
-package com.platformeight.motelmap;
+package com.platformeight.restmap;
 import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
@@ -27,7 +27,7 @@ public class ApiRequest {
         String clientSecret = "3mtiC8jcg2"; //애플리케이션 클라이언트 시크릿값"
         String text = null;
         try {
-            String str = "모텔 "+ gps(latLng);
+            String str = "화장실 "+ gps(latLng);
             text = URLEncoder.encode(str, "UTF-8");
             Log.d(TAG, "run querry: "+str);
         } catch (UnsupportedEncodingException e) {

@@ -3,7 +3,7 @@
  * Copyright (c) 2019. platform eight. All rights reserved.
  */
 
-package com.platformeight.motelmap;
+package com.platformeight.restmap;
 
 import android.os.AsyncTask;
 
