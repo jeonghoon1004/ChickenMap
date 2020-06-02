@@ -4,9 +4,9 @@
     <string name="naver_map_sdk_client_id" translatable="false">z1nfutbyps</string>
     <string name="google_map_sdk_client_id" translatable="false">"AIzaSyD1HXVyKDoAQ6rpN57R07Ii7Pu8xR6dYZs"</string>
     <!-- google ad  -->
-    <string name="admob_app_id">ca-app-pub-2001828642667224~8942451918</string>
-    <string name="banner_ad_unit_id">ca-app-pub-2001828642667224/6319130334</string>
+    <string name="admob_app_id">ca-app-pub-2001828642667224~4910705546</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2001828642667224/9971460531</string>
     <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_unit_id">ca-app-pub-2001828642667224/4208999982</string>
+    <string name="ad_unit_id">ca-app-pub-2001828642667224/4845118759</string>
     <string name="ad_unit_id_for_test">ca-app-pub-3940256099942544/1033173712</string>
 </resources>
