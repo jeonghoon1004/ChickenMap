@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-package com.platformeight.restmap;
+package com.platformeight.foodmap;
 
 import android.Manifest;
 import android.app.AlertDialog;

@@ -1,4 +1,4 @@
-package com.platformeight.restmap;
+package com.platformeight.foodmap;
 
 import android.content.Context;
 
