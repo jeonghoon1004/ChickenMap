@@ -42,6 +42,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -203,6 +204,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 Intent tt = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + marker.getTag()));
                 startActivity(tt);
                 adShow();
+                
             }
         } catch(SecurityException e)  {
             Log.e("Exception: %s", e.getMessage());
