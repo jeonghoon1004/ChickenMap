@@ -1,4 +1,4 @@
-package com.platformeight.foodmap;
+package com.platformeight.pizzamap;
 
 import org.junit.Test;
 
