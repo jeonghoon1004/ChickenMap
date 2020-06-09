@@ -264,7 +264,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     com.naver.maps.geometry.LatLng tm = new Tm128(obj.getDouble("mapx"), obj.getDouble("mapy")).toLatLng();
                     MarkerOptions options = new MarkerOptions()
                             .position(new LatLng(tm.latitude, tm.longitude))
-                            .title(obj.getString("title"));
+                            .title(obj.getString("title"))
+                            .snippet("전화연결: "+obj.getString("telephone"));
                     mMap.addMarker(options).setTag(obj.getString("telephone"));
                     Log.d("mylocation", i+" location marker:\n"+obj.getString("title")+ " tel :"+obj.getString("telephone") +" "+tm.latitude+", "+ tm.longitude);
                 }
