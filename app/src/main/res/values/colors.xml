@@ -10,4 +10,5 @@
     <color name="colorParking">#0000ff</color>
     <color name="colorRest">#c0c0c0</color>
     <color name="colorPizza">#ffff00</color>
+    <color name="colorBlack">#000000</color>
 </resources>

@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPizza</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item> <!-- Toolbar의 타이틀 텍스트 색상-->
     </style>
 
 </resources>
